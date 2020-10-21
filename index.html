@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Meditation app</title>
+</head>
+<body>
+    <header>
+        <h1>Task 3 Meditation app</h1>
+    </header>
+    <main class="main">
+        <section class="bg-midea">
+            <video width="100%" 
+                   height="auto" 
+                   preload="auto" 
+                   loading="lazy" 
+                   autoplay="autoplay" 
+                   loop="loop" 
+                   poster="/img/Sea49053.png">
+                <source src="video/Sea - 49053.mp4" type="video/mp4"></source>
+                <source src="video/Sea - 49053.mp4" type="video/webm"></source>
+                Sorry, your browser does not support HTML5 video.
+            </video>
+        </section>
+        <section class="songs">
+            <button class="songs-choice">first song</button>
+            <button class="songs-choice">second song</button>
+            <button class="songs-choice">third song</button>
+            <button class="songs-choice">fourth song</button>
+            <button class="songs-choice">fifth song</button>
+        </section>
+        <section class="play-section">
+            <button class="play-section-button"></button>
+            <audio class="song" controls>
+                <source loading="lazy" src="/sound/3.mp3"><source>
+                <source loading="lazy" src="/sound/2.mp3"><source>
+                <source loading="lazy" src="/sound/3.mp3"><source>
+                <source loading="lazy" src="/sound/4.mp3"><source>
+                <source loading="lazy" src="/sound/5.mp3"><source>
+                Sorry, your browser does not support HTML5 audio.
+            </audio>
+        </section>
+        <section class="about-songs">
+            <article class="time-select">
+                <button data-rime="120" class="">2 minute</button>
+                <button data-rime="300" class="">5 minute</button>
+                <button data-rime="600" class="">10 minute</button>
+            </article>
+            <article class="about-songs-text">
+                Fragments by Nomyn <br/>
+                <a href="https://soundcloud.com/nomyn">https://soundcloud.com/nomy</a>
+            </article>
+            <article class="about-songs-text">
+                Creative Commons — Attribution 3.0
+                <br/> Unported  — CC BY 3.0
+            </article>
+            <article class="about-songs-text">
+                Free Download / Stream: <br/>
+                <a href="http://bit.ly/l-fragments">http://bit.ly/l-fragments</a>
+            </article>
+            <article class="about-songs-text">
+                Music promoted by Audio Library  <br/>
+                <a href="https://youtu.be/ndyyIhwojys">https://youtu.be/ndyyIhwojys</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy; Всю музыку Вы можете скачать по ссылкам и не забудьте поблагодорить авторов. &reg;
+    </footer>    
+    <script src="js/main.js"></script>
+</body>
+</html>
