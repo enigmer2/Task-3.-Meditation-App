@@ -8,39 +8,33 @@
 </head>
 <body>
     <header>
+        <hr class="downloading-songs">
+        <hr class="downloading-video">
+        <hr class="songs-duration">
         <h1>Task 3 Meditation app</h1>
     </header>
     <main class="main">
         <section class="bg-midea">
-            <video width="100%" 
-                   height="auto" 
-                   preload="auto" 
-                   loading="lazy" 
-                   autoplay="autoplay" 
-                   loop="loop" 
-                   poster="/img/Sea49053.png">
-                <source src="video/Sea - 49053.mp4" type="video/mp4"></source>
-                <source src="video/Sea - 49053.mp4" type="video/webm"></source>
+            <video width="100%" height="auto" preload="auto" autoplay="autoplay" loop="loop" poster="/img/Sea49053.png">
+                <source src="/video/5.mp4" type="video/mp4"></source>
+                <source src="/video/5.mp4" type="video/webm"></source>
                 Sorry, your browser does not support HTML5 video.
             </video>
         </section>
         <section class="songs">
-            <button class="songs-choice">first song</button>
-            <button class="songs-choice">second song</button>
-            <button class="songs-choice">third song</button>
-            <button class="songs-choice">fourth song</button>
-            <button class="songs-choice">fifth song</button>
+            <button data-video="/sound/1.mp4" data-soung="/sound/1.mp3" class="songs-choice">first song</button>
+            <button data-video="/sound/2.mp4" data-soung="/sound/2.mp3" class="songs-choice">second song</button>
+            <button data-video="/sound/3.mp4" data-soung="/sound/3.mp3" class="songs-choice">third song</button>
+            <button data-video="/sound/4.mp4" data-soung="/sound/4.mp3" class="songs-choice">fourth song</button>
+            <button data-video="/sound/5.mp4" data-soung="/sound/5.mp3" class="songs-choice">fifth song</button>
         </section>
         <section class="play-section">
             <button class="play-section-button"></button>
-            <audio class="song" controls>
-                <source loading="lazy" src="/sound/3.mp3"><source>
-                <source loading="lazy" src="/sound/2.mp3"><source>
-                <source loading="lazy" src="/sound/3.mp3"><source>
-                <source loading="lazy" src="/sound/4.mp3"><source>
+            <audio id="myaudio" class="song" autoplay="autoplay" loop="loop">
                 <source loading="lazy" src="/sound/5.mp3"><source>
                 Sorry, your browser does not support HTML5 audio.
             </audio>
+            <article class="time-display">0:00</article>
         </section>
         <section class="about-songs">
             <article class="time-select">
@@ -67,8 +61,12 @@
         </section>
     </main>
     <footer>
-        &copy; Всю музыку Вы можете скачать по ссылкам и не забудьте поблагодорить авторов. &reg;
+        &copy; Вы можете по ссылкам поблагодорить авторов за прекрасную музыку &reg;
     </footer>    
     <script src="js/main.js"></script>
+    <script>
+        var audio = document.getElementById("myaudio");
+        audio.volume = 0.1;
+      </script>
 </body>
 </html>
