@@ -1,73 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Meditation app</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <hr class="downloading-songs">
-        <hr class="downloading-video">
-        <hr class="songs-duration">
-        <h1>Task 3 Meditation app</h1>
+      <hr class="downloading-songs" />
+      <hr class="downloading-video" />
+      <hr id="songs-duration" class="songs-duration" />
+      <h1>Task 3 Meditation app</h1>
     </header>
     <main class="main">
-        <section class="midea">
-            
-            <video class="video">
-                <source src="video/1.mp4" type="video/mp4"  loop="true" preload="true"><source><!-- poster="img/Sea49053.png"-->
-                Sorry, your browser does not support HTML5 video.
-            </video>
-            <audio id="myaudio" class="song">
-                <source src="sound/1.mp3" loading="lazy" autoplay="autoplay"  loop="true"><source>
-                Sorry, your browser does not support HTML5 audio.
-            </audio>
-        </section>
-        <section class="songs">
-            <button data-video="video/1.mp4" data-soung="sound/1.mp3" class="songs-choice">first song</button>
-            <button data-video="video/2.mp4" data-soung="sound/2.mp3" class="songs-choice">second song</button>
-            <button data-video="video/3.mp4" data-soung="sound/3.mp3" class="songs-choice">third song</button>
-            <button data-video="video/4.mp4" data-soung="sound/4.mp3" class="songs-choice">fourth song</button>
-            <button data-video="video/5.mp4" data-soung="sound/5.mp3" class="songs-choice">fifth song</button>
-        </section>
-        <section class="play-section">
-
-            <button class="play-section-button"></button>
-            
-            <article class="time-display">0:00</article>
-            
-            <article class="time-select">
-                <button data-time="5" class="songs-choice"> add 2 minute</button>
-                <button data-time="300" class="songs-choice"> add 5 minute</button>
-                <button data-time="600" class="songs-choice"> add 10 minute</button>
-            </article>
-
-        </section>
-        <section class="about-songs">
-     
-            <article class="about-songs-text">
-                Fragments by Nomyn <br/>
-                <a href="https://soundcloud.com/nomyn">https://soundcloud.com/nomy</a>
-            </article>
-            <article class="about-songs-text">
-                Creative Commons — Attribution 3.0
-                <br/> Unported  — CC BY 3.0
-            </article>
-            <article class="about-songs-text">
-                Free Download / Stream: <br/>
-                <a href="http://bit.ly/l-fragments">http://bit.ly/l-fragments</a>
-            </article>
-            <article class="about-songs-text">
-                Music promoted by Audio Library  <br/>
-                <a href="https://youtu.be/ndyyIhwojys">https://youtu.be/ndyyIhwojys</a>
-            </article>
-        </section>
+      <section class="midea">
+        <video class="video" loop="true" preload="true">
+          <source src="video/1.mp4" type="video/mp4" />
+          <source />
+          <!-- poster="img/Sea49053.png"-->
+          Sorry, your browser does not support HTML5 video.
+        </video>
+        <audio id="myaudio" class="song" loading="lazy" loop="true">
+          <source src="sound/1.mp3" />
+          <source />
+          Sorry, your browser does not support HTML5 audio.
+        </audio>
+      </section>
+      <section class="songs">
+        <button data-video="video/1.mp4" data-soung="sound/1.mp3" class="songs-choice" >
+          forest river
+        </button>
+        <button data-video="video/2.mp4" data-soung="sound/2.mp3" class="songs-choice" >
+          pleasure island
+        </button>
+        <button data-video="video/3.mp4" data-soung="sound/3.mp3" class="songs-choice" >
+        rain will calm
+        </button>
+        <button data-video="video/4.mp4" data-soung="sound/4.mp3" class="songs-choice" >
+          golden sunset
+        </button>
+        <button data-video="video/5.mp4" data-soung="sound/5.mp3" class="songs-choice" >
+          majestic raging sea
+        </button>
+      </section>
+      <section class="play-section">
+        <button class="play-section-button"></button>
+        <article class="time-display">0:00</article>
+      </section>
+      <section class="time-select">
+          <button data-time="5" class="songs-choice">add 5 seconds</button>
+          <button data-time="300" class="songs-choice">add 5 minute</button>
+          <button data-time="600" class="songs-choice">add 10 minute</button>
+      </section>
     </main>
     <footer>
-        &copy; You can follow the links to thank the authors for the wonderful music &reg;
-    </footer>    
+      &copy; Just relax &reg;
+    </footer>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

@@ -9,7 +9,7 @@ body {
     "header header header"
     "main main main"
     "footer footer footer";
-  grid-template-rows: 60px 1fr 30px;
+  grid-template-rows: 60px 1fr 20px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2px;
   height: 100vh;
@@ -19,25 +19,43 @@ video{
   height:auto;
 }
 .downloading-songs {
-  background-color: red;
+  background-color: #000;
   border: 0px;
-  width: 20%;
+  width: 100%;
   height: 5px;
 }
 .downloading-video {
-  background-color: green;
+  background-color: #ccc;
   border: 0px;
-  width: 80%;
+  width: 100%;
   height: 5px;
 }
 .songs-duration {
-  background-color: blue;
+  background-color: #fff;
   border: 0px;
   width: 40%;
   height: 5px;
 }
 h1 {
   padding-top: 20px;
+  font-size: xx-large;
+  color: #000;
+  text-shadow: -0 -5px 2px #ffffff, 0 -5px 2px #ffffff, -0 5px 2px #ffffff,
+    0 5px 2px #ffffff, -5px -0 2px #ffffff, 5px -0 2px #ffffff,
+    -5px 0 2px #ffffff, 5px 0 2px #ffffff, -1px -5px 2px #ffffff,
+    1px -5px 2px #ffffff, -1px 5px 2px #ffffff, 1px 5px 2px #ffffff,
+    -5px -1px 2px #ffffff, 5px -1px 2px #ffffff, -5px 1px 2px #ffffff,
+    5px 1px 2px #ffffff, -2px -5px 2px #ffffff, 2px -5px 2px #ffffff,
+    -2px 5px 2px #ffffff, 2px 5px 2px #ffffff, -5px -2px 2px #ffffff,
+    5px -2px 2px #ffffff, -5px 2px 2px #ffffff, 5px 2px 2px #ffffff,
+    -3px -5px 2px #ffffff, 3px -5px 2px #ffffff, -3px 5px 2px #ffffff,
+    3px 5px 2px #ffffff, -5px -3px 2px #ffffff, 5px -3px 2px #ffffff,
+    -5px 3px 2px #ffffff, 5px 3px 2px #ffffff, -4px -5px 2px #ffffff,
+    4px -5px 2px #ffffff, -4px 5px 2px #ffffff, 4px 5px 2px #ffffff,
+    -5px -4px 2px #ffffff, 5px -4px 2px #ffffff, -5px 4px 2px #ffffff,
+    5px 4px 2px #ffffff, -5px -5px 2px #ffffff, 5px -5px 2px #ffffff,
+    -5px 5px 2px #ffffff, 5px 5px 2px #ffffff, -5px -5px 2px #ffffff,
+    5px -5px 2px #ffffff, -5px 5px 2px #ffffff, 5px 5px 2px #ffffff;
 }
 
 .midea {
@@ -95,7 +113,7 @@ header {
   align-items: center;
 }
 .songs-choice {
-  width: 65%;
+  width: 75%;
   padding: 2%;
   box-shadow: 0px 10px 14px -7px #7a7a7a;
   background: linear-gradient(to bottom, #ffffff 5%, #e9e9e9 100%);
@@ -149,12 +167,7 @@ header {
 }
 
 .about-songs {
-  z-index: 4;
-  /* border: 1px solid #0000ff;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+ 
 }
 footer {
   grid-area: footer;
@@ -187,7 +200,9 @@ footer {
     5px -5px 2px #ffffff, -5px 5px 2px #ffffff, 5px 5px 2px #ffffff;
 }
 .time-select {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 4; 
 }
