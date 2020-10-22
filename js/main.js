@@ -12,17 +12,16 @@ const sounds = document.querySelectorAll(".songs button");
 const timeDisplay = document.querySelector(".time-display");
 const timeSelect = document.querySelectorAll(".time-select button");
 // get the length of the <hr /> надо узнать width станицы или изменять hr.width проценты
-const time = document.querySelectorAll(".time-display");
+const time = document.getElementById("songs-duration");
 // duration of song
 let fakeDuration = 600;
+let procentForHr = 0;
 
 // выбираем песни
 sounds.forEach(sound => {
     sound.addEventListener('click', function() {
         song.src = this.getAttribute("data-soung");
-        console.log(song); 
         video.src = this.getAttribute("data-video");
-        console.log(video);
         checkPlaying(song);
     });
 });
@@ -60,7 +59,8 @@ timeSelect.forEach(option => {
     let seconds = Math.floor(elapsed % 60);
     let minutes = Math.floor(elapsed / 60);
     // animate the <hr/>
-
+    procentForHr =  ((100*currentTime)/fakeDuration).toFixed(3); //округляем, записываем в <hr wigth /> 
+    time.style.width=`${procentForHr}%`;
     //  animate the text
     timeDisplay.textContent = `${minutes}:${seconds}`;
 
@@ -73,14 +73,7 @@ timeSelect.forEach(option => {
     };
   };
 };
-document.querySelector('.video').addEventListener('ended', function(){
-  this.load();
-  this.play();
-});
-document.querySelector('.song').addEventListener('ended', function(){
-  this.load();
-  this.play();
-});
+
 
 
 app();
