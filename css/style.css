@@ -58,7 +58,7 @@ h1 {
     5px -5px 2px #ffffff, -5px 5px 2px #ffffff, 5px 5px 2px #ffffff;
 }
 
-.midea {
+.media {
   position: fixed;
   top: 0;
   right: 0;
@@ -72,7 +72,7 @@ h1 {
   filter: blur(0px);
 }
 
-.midea > video {
+.media > video {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,7 +83,7 @@ h1 {
 }
 
 @supports (object-fit: cover) {
-  .midea > video {
+  .media > video {
     top: 0;
     left: 0;
     width: 100%;
@@ -106,7 +106,6 @@ header {
 }
 .songs {
   z-index: 2;
-  /* border: 1px solid #ff0000;*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
