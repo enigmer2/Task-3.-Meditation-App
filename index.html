@@ -14,34 +14,39 @@
         <h1>Task 3 Meditation app</h1>
     </header>
     <main class="main">
-        <section class="bg-midea">
-            <video width="100%" height="auto" preload="auto" autoplay="autoplay" loop="loop" poster="/img/Sea49053.png">
-                <source src="/video/5.mp4" type="video/mp4"></source>
-                <source src="/video/5.mp4" type="video/webm"></source>
+        <section class="midea">
+            
+            <video class="video">
+                <source src="video/1.mp4" type="video/mp4"  loop="true" preload="true"><source><!-- poster="img/Sea49053.png"-->
                 Sorry, your browser does not support HTML5 video.
             </video>
-        </section>
-        <section class="songs">
-            <button data-video="/sound/1.mp4" data-soung="/sound/1.mp3" class="songs-choice">first song</button>
-            <button data-video="/sound/2.mp4" data-soung="/sound/2.mp3" class="songs-choice">second song</button>
-            <button data-video="/sound/3.mp4" data-soung="/sound/3.mp3" class="songs-choice">third song</button>
-            <button data-video="/sound/4.mp4" data-soung="/sound/4.mp3" class="songs-choice">fourth song</button>
-            <button data-video="/sound/5.mp4" data-soung="/sound/5.mp3" class="songs-choice">fifth song</button>
-        </section>
-        <section class="play-section">
-            <button class="play-section-button"></button>
-            <audio id="myaudio" class="song" autoplay="autoplay" loop="loop">
-                <source loading="lazy" src="/sound/5.mp3"><source>
+            <audio id="myaudio" class="song">
+                <source src="sound/1.mp3" loading="lazy" autoplay="autoplay"  loop="true"><source>
                 Sorry, your browser does not support HTML5 audio.
             </audio>
+        </section>
+        <section class="songs">
+            <button data-video="video/1.mp4" data-soung="sound/1.mp3" class="songs-choice">first song</button>
+            <button data-video="video/2.mp4" data-soung="sound/2.mp3" class="songs-choice">second song</button>
+            <button data-video="video/3.mp4" data-soung="sound/3.mp3" class="songs-choice">third song</button>
+            <button data-video="video/4.mp4" data-soung="sound/4.mp3" class="songs-choice">fourth song</button>
+            <button data-video="video/5.mp4" data-soung="sound/5.mp3" class="songs-choice">fifth song</button>
+        </section>
+        <section class="play-section">
+
+            <button class="play-section-button"></button>
+            
             <article class="time-display">0:00</article>
+            
+            <article class="time-select">
+                <button data-time="5" class="songs-choice"> add 2 minute</button>
+                <button data-time="300" class="songs-choice"> add 5 minute</button>
+                <button data-time="600" class="songs-choice"> add 10 minute</button>
+            </article>
+
         </section>
         <section class="about-songs">
-            <article class="time-select">
-                <button data-rime="120" class="">2 minute</button>
-                <button data-rime="300" class="">5 minute</button>
-                <button data-rime="600" class="">10 minute</button>
-            </article>
+     
             <article class="about-songs-text">
                 Fragments by Nomyn <br/>
                 <a href="https://soundcloud.com/nomyn">https://soundcloud.com/nomy</a>
@@ -61,12 +66,8 @@
         </section>
     </main>
     <footer>
-        &copy; Вы можете по ссылкам поблагодорить авторов за прекрасную музыку &reg;
+        &copy; You can follow the links to thank the authors for the wonderful music &reg;
     </footer>    
     <script src="js/main.js"></script>
-    <script>
-        var audio = document.getElementById("myaudio");
-        audio.volume = 0.1;
-      </script>
 </body>
 </html>

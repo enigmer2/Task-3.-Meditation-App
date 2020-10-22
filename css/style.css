@@ -14,26 +14,33 @@ body {
   grid-gap: 2px;
   height: 100vh;
 }
+video{
+  width:100%;
+  height:auto;
+}
 .downloading-songs {
   background-color: red;
   border: 0px;
+  width: 20%;
   height: 5px;
 }
 .downloading-video {
   background-color: green;
   border: 0px;
+  width: 80%;
   height: 5px;
 }
 .songs-duration {
   background-color: blue;
   border: 0px;
+  width: 40%;
   height: 5px;
 }
-h1{
-    padding-top: 20px;
+h1 {
+  padding-top: 20px;
 }
 
-.bg-midea {
+.midea {
   position: fixed;
   top: 0;
   right: 0;
@@ -47,7 +54,7 @@ h1{
   filter: blur(0px);
 }
 
-.bg-midea > video {
+.midea > video {
   position: absolute;
   top: 0;
   left: 0;
@@ -58,7 +65,7 @@ h1{
 }
 
 @supports (object-fit: cover) {
-  .bg-midea > video {
+  .midea > video {
     top: 0;
     left: 0;
     width: 100%;
@@ -104,28 +111,43 @@ header {
   text-decoration: none;
   text-shadow: 0px 1px 0px #808080;
 }
+.songs-choice:hover {
+  background: linear-gradient(to bottom, #242424 5%, #353535 100%);
+  background-color: #000;
+  color: #fff;
+}
+
 .play-section {
   z-index: 3;
   /* border: 1px solid #00ff00;*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 50%;
   align-items: center;
 }
 .play-section-button {
   background-color: transparent;
-  width: 0;
-  height: 0;
+  width: 100px;
+  height: 100px;
   border-top: 50px solid transparent;
   border-left: 100px solid rgb(255, 255, 255);
   border-right: 0px solid transparent;
   border-bottom: 50px solid transparent;
   outline: none;
   cursor: pointer;
+  transition: 200ms all cubic-bezier(0.79, 0.59, 0.11, 0.41);;
 }
-.play-section-button:hover {
+.play-section-button-pause {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border-width: 0px 40px 0px 40px;
+  border-color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition: 200ms all cubic-bezier(0.79, 0.59, 0.11, 0.41);;
 }
+
 .about-songs {
   z-index: 4;
   /* border: 1px solid #0000ff;*/
@@ -146,5 +168,26 @@ footer {
 }
 .time-display {
   font-size: xxx-large;
-  color: rgb(255, 255, 255);
+  color: #000;
+  text-shadow: -0 -5px 2px #ffffff, 0 -5px 2px #ffffff, -0 5px 2px #ffffff,
+    0 5px 2px #ffffff, -5px -0 2px #ffffff, 5px -0 2px #ffffff,
+    -5px 0 2px #ffffff, 5px 0 2px #ffffff, -1px -5px 2px #ffffff,
+    1px -5px 2px #ffffff, -1px 5px 2px #ffffff, 1px 5px 2px #ffffff,
+    -5px -1px 2px #ffffff, 5px -1px 2px #ffffff, -5px 1px 2px #ffffff,
+    5px 1px 2px #ffffff, -2px -5px 2px #ffffff, 2px -5px 2px #ffffff,
+    -2px 5px 2px #ffffff, 2px 5px 2px #ffffff, -5px -2px 2px #ffffff,
+    5px -2px 2px #ffffff, -5px 2px 2px #ffffff, 5px 2px 2px #ffffff,
+    -3px -5px 2px #ffffff, 3px -5px 2px #ffffff, -3px 5px 2px #ffffff,
+    3px 5px 2px #ffffff, -5px -3px 2px #ffffff, 5px -3px 2px #ffffff,
+    -5px 3px 2px #ffffff, 5px 3px 2px #ffffff, -4px -5px 2px #ffffff,
+    4px -5px 2px #ffffff, -4px 5px 2px #ffffff, 4px 5px 2px #ffffff,
+    -5px -4px 2px #ffffff, 5px -4px 2px #ffffff, -5px 4px 2px #ffffff,
+    5px 4px 2px #ffffff, -5px -5px 2px #ffffff, 5px -5px 2px #ffffff,
+    -5px 5px 2px #ffffff, 5px 5px 2px #ffffff, -5px -5px 2px #ffffff,
+    5px -5px 2px #ffffff, -5px 5px 2px #ffffff, 5px 5px 2px #ffffff;
+}
+.time-select {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
