@@ -46,11 +46,15 @@ function app() {
     if (song.paused) {
       song.play();
       video.play();
-      play.classList.toggle("play-section-button-pause"); 
+      if (play.classList.contains("play-section-button-pause")) {
+        
+      } else {
+        play.classList.toggle("play-section-button-pause"); 
+      }
     } else {
       song.pause();
       video.pause();
-      play.classList.toggle("play-section-button-pause"); 
+      play.classList.remove("play-section-button-pause"); 
     }
   }
 
@@ -71,7 +75,7 @@ function app() {
       song.pause();
       song.currentTime = 0;
       video.pause();
-      play.classList.toggle("play-section-button-pause");
+      play.classList.remove("play-section-button-pause");
     }
   };
 }
