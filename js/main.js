@@ -14,7 +14,7 @@ function app() {
   // get the length of the <hr /> надо узнать width станицы или изменять hr.width проценты
   const time = document.getElementById("songs-duration");
   // duration of song
-  let fakeDuration = 600;
+  let fakeDuration = 50;
   let procentForHr = 0;
 
   // выбираем песни
@@ -34,10 +34,9 @@ function app() {
   // select sound
   timeSelect.forEach((option) => {
     option.addEventListener("click", function () {
-      fakeDuration = this.getAttribute("data-time");
-      timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
-        fakeDuration % 60
-      )}`;
+      fakeDuration += +(this.getAttribute("data-time"));
+      console.log(fakeDuration);
+      timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(fakeDuration % 60 )}`;
     });
   });
 
