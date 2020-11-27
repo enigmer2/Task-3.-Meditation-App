@@ -6,3 +6,5 @@
 * Видео: https://youtu.be/oMBXdZzYqEk (45:01)
 * Код: https://github.com/developedbyed/meditation-app (82 lines js-code)
 * Demo: https://relacsed-app.netlify.app/
+
+* моё решение https://enigmer2.github.io/Task-3.-Meditation-App
