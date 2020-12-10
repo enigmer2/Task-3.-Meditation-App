@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div id="songs-duration" class="songs-duration" ></div>
+      <div id="songs-duration" class="songs-duration"></div>
       <h1>Task 3 Meditation app</h1>
     </header>
     <main class="main">
@@ -16,7 +16,6 @@
         <video class="video" loop="true" preload="true">
           <source src="video/1.mp4" type="video/mp4" />
           <source />
-          <!-- poster="img/Sea49053.png"-->
           Sorry, your browser does not support HTML5 video.
         </video>
         <audio id="myaudio" class="song" loading="lazy" loop="true">
@@ -26,19 +25,39 @@
         </audio>
       </section>
       <section class="songs">
-        <button data-video="video/1.mp4" data-soung="sound/1.mp3" class="songs-choice" >
+        <button
+          data-video="video/1.mp4"
+          data-soung="sound/1.mp3"
+          class="songs-choice"
+        >
           forest river
         </button>
-        <button data-video="video/2.mp4" data-soung="sound/2.mp3" class="songs-choice" >
+        <button
+          data-video="video/2.mp4"
+          data-soung="sound/2.mp3"
+          class="songs-choice"
+        >
           pleasure island
         </button>
-        <button data-video="video/3.mp4" data-soung="sound/3.mp3" class="songs-choice" >
-        rain will calm
+        <button
+          data-video="video/3.mp4"
+          data-soung="sound/3.mp3"
+          class="songs-choice"
+        >
+          rain will calm
         </button>
-        <button data-video="video/4.mp4" data-soung="sound/4.mp3" class="songs-choice" >
+        <button
+          data-video="video/4.mp4"
+          data-soung="sound/4.mp3"
+          class="songs-choice"
+        >
           golden sunset
         </button>
-        <button data-video="video/5.mp4" data-soung="sound/5.mp3" class="songs-choice" >
+        <button
+          data-video="video/5.mp4"
+          data-soung="sound/5.mp3"
+          class="songs-choice"
+        >
           majestic raging sea
         </button>
       </section>
@@ -47,14 +66,12 @@
         <div class="time-display">0:00</div>
       </section>
       <section class="time-select">
-          <button data-time="10" class="songs-choice">add 10 sec</button>
-          <button data-time="300" class="songs-choice">add 5 minute</button>
-          <button data-time="600" class="songs-choice">add 10 minute</button>
+        <button data-time="10" class="songs-choice">add 10 sec</button>
+        <button data-time="300" class="songs-choice">add 5 minute</button>
+        <button data-time="600" class="songs-choice">add 10 minute</button>
       </section>
     </main>
-    <footer>
-      &copy; Just relax &reg;
-    </footer>
+    <footer>&copy; Just relax &reg;</footer>
     <script src="js/main.js"></script>
   </body>
 </html>

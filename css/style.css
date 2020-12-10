@@ -14,9 +14,9 @@ body {
   grid-gap: 2px;
   height: 100vh;
 }
-video{
-  width:100%;
-  height:auto;
+video {
+  width: 100%;
+  height: auto;
 }
 .downloading-songs {
   background-color: #000;
@@ -152,7 +152,7 @@ header {
   border-bottom: 50px solid transparent;
   outline: none;
   cursor: pointer;
-  transition: 200ms all cubic-bezier(0.79, 0.59, 0.11, 0.41);;
+  transition: 200ms all cubic-bezier(0.79, 0.59, 0.11, 0.41);
 }
 .play-section-button-pause {
   background-color: transparent;
@@ -162,11 +162,7 @@ header {
   border-color: #ffffff;
   outline: none;
   cursor: pointer;
-  transition: 200ms all cubic-bezier(0.79, 0.59, 0.11, 0.41);;
-}
-
-.about-songs {
- 
+  transition: 200ms all cubic-bezier(0.79, 0.59, 0.11, 0.41);
 }
 footer {
   grid-area: footer;
@@ -203,5 +199,5 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  z-index: 4; 
+  z-index: 4;
 }
